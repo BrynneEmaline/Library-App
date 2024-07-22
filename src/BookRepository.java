@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 
 public class BookRepository {
+
+    /**
+     * to add:
+     * find by keyword
+     *
+     */
     private final ArrayList<Book> books = new ArrayList<>();
 
 

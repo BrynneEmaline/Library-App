@@ -1,5 +1,9 @@
 public class Book {
-
+    /**
+     * to add:
+     * book stock
+     * if book can be rented out
+     */
     private final String isbn;
     private final String title;
     private final String genre;
