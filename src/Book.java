@@ -1,21 +1,21 @@
 public class Book {
-    /**
-     * to add:
-     * book stock
-     * if book can be rented out
-     */
+
     private final String isbn;
     private final String title;
     private final String genre;
     private final String description;
     private final String author;
+    private int stock;
 
-    public Book (String isbn, String title, String genre, String description, String author) {
+
+
+    public Book (String isbn, String title, String genre, String description, String author, int stock) {
         this.isbn = isbn;
         this.title = title;
         this.genre = genre;
         this.description = description;
         this.author = author;
+        this.stock = stock;
     }
 
     public String getIsbn() {
@@ -36,5 +36,17 @@ public class Book {
 
     public String getAuthor() {
         return author;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void lowerStock() {
+        if (stock > 0) {
+            stock--;
+        } else {
+            System.out.println("Stock is already zero.");
+        }
     }
 }

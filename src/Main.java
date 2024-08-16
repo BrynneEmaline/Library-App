@@ -1,13 +1,11 @@
 public class Main {
 
     public static void main(String[] args){
-    LibraryApp libraryApp = new LibraryApp();
-    libraryApp.searchByIsbn("328743");
+    UserInterface ui = new UserInterface();
 
-
-
+        System.out.println("Welcome to the Library App!");
+    ui.Startup();
     }
 }
-// ability to search for books based on attributes
-// attributes: title, genre, author, isbn, description
+
 
